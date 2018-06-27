@@ -3,13 +3,14 @@ html, body {
     background-color: #f1f1f1;
     margin: auto;
 }
+div #home {
+    overflow: auto;
+    margin: 0;
+}
 footer {
     background-color: #ccc;
     width: 100%;
     height: 60px;
-}
-div {
-    display: block;
 }
 nav {
     float: right;
@@ -29,6 +30,8 @@ li a {
 }
 h1, h3 {
     text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 iframe {
     width: 100%;
@@ -36,8 +39,24 @@ iframe {
     border: 0;
 }
 .transport-img {
-    width: 20%;
+    width: 30%;
 }
 .main-img {
     width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+}
+.left-image {
+    float: left;
+    margin: 0 1.5rem 0.2rem 0;
+}
+.right-image {
+    float: right;
+    margin: 0 0 0.2rem 1.5rem;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }

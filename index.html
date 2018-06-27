@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Welcome to Lviv project</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <header>
-        <div id="logo">
+        <div>
             <span>
-                <a href="index.html">Welcome to <img src="img/logo_EN.jpg" alt="logo"></a>
+                <a class="logo" href="index.html">Welcome to <img src="img/logo_EN.jpg" alt="logo"></a>
             </span>
             <nav>
                 <ul>
@@ -25,12 +26,12 @@
         </div>
     </header>
     <main>
-        <section id="home">
-            <img class="main-img" src="img/lviv.jpeg" alt="Lviv">
-        </section>
-        <section id="history">
+        <div id="home">
+            <img class="main-img clearfix" src="img/lviv.jpeg" title="Lviv Opera House" alt="Lviv">
+        </div>
+        <section id="history" class="clearfix">
             <h1>History</h1>
-            <img src="img/Lviv_old.jpg" alt="Lviv old" style="width: 20%">
+            <img class="transport-img left-image" src="img/Lviv_old.jpg" title="Old Lviv" alt="Lviv old">
             <p>The city was founded in 1256 by King Danylo. He named it in honor
             of his son, Lev.</p>
             <p>At different times it was part of Polish Kingdom, Austro-
@@ -42,33 +43,33 @@
             Eastern European, Italian and German, but also Gothic, renaissance,
             baroque, classic styles and Art Nouveau and Art Deco styles.</p>
         </section>
-        <section id="how-to-get">
+        <section id="how-to-get" class="clearfix">
             <h1>How to get here?</h1>
-            
-            <h3>By rail</h3>
-            <img class="transport-img" src="img/Lviv_Trainstation.jpg" alt="Lviv Train Station">
-            <p>Lviv has been able to receive trains since 1861 and can boast one
-            of the oldest railways in Ukraine. In that year the railroad
-            construction was finished, and the first train arrived to Lviv from
-            Vienna on November 4, 1861.</p>
-            
-            <h3>By air</h3>
-            <img class="transport-img" src="img/Lviv_Airport.jpg" alt="Lviv Airport">
-            <p>Lviv Airport is situated on Lyubinska Street just 7 km from the
-            city centre. Lviv has established air service with 14 European
-            countries, with main destinations including Frankfurt, Warsaw,
-            Naples, Rome, Lisbon, Bratislava, Moscow, Kyiv, etc.</p>    
-            
-            <h3>By bus</h3>
-            <img class="transport-img" src="img/Lviv_Bus_Station.jpg" alt="Lviv Bus Station">
-            <p>You can get to Lviv by bus from almost every place in Europe or
-            Ukraine.</p>
-            
-            <h3>By car</h3>
-            <img class="transport-img" src="img/Lviv_Road.jpg" alt="Lviv Road">
-            <p>If you travel to Lviv by your own car, it will be best for you to
-            follow E-40 International Highway (from the western border to Lviv it
-            is M-11 Ukrainian Highway, and from Kyiv it is M-06).</p>
+            <div class="clearfix"><h3>By rail</h3>
+                <img class="transport-img left-image" src="img/Lviv_Trainstation.jpg" title="Lviv Main Train Station" alt="Lviv Train Station">
+                <p>Lviv has been able to receive trains since 1861 and can boast one
+                of the oldest railways in Ukraine. In that year the railroad
+                construction was finished, and the first train arrived to Lviv from
+                Vienna on November 4, 1861.</p>
+            </div>
+            <div class="clearfix"><h3>By air</h3>
+                <img class="transport-img right-image" src="img/Lviv_Airport.jpg" title="Lviv International Airport" alt="Lviv Airport">
+                <p>Lviv Airport is situated on Lyubinska Street just 7 km from the
+                city centre. Lviv has established air service with 14 European
+                countries, with main destinations including Frankfurt, Warsaw,
+                Naples, Rome, Lisbon, Bratislava, Moscow, Kyiv, etc.</p>    
+            </div>
+            <div class="clearfix"><h3>By bus</h3>
+                <img class="transport-img  left-image" src="img/Lviv_Bus_Station.jpg" title="Lviv Main Bus Station" alt="Lviv Bus Station">
+                <p>You can get to Lviv by bus from almost every place in Europe or
+                Ukraine.</p>
+            </div>
+            <div class="clearfix"><h3>By car</h3>
+                <img class="transport-img right-image" src="img/Lviv_Road.jpg" title="Road near Lviv" alt="Lviv Road">
+                <p>If you travel to Lviv by your own car, it will be best for you to
+            <f></f>ollow E-40 International Highway (from the western border to Lviv it
+                is M-11 Ukrainian Highway, and from Kyiv it is M-06).</p>
+            </div>
         </section>
         <section id="citymap">
             <h1>City map</h1>
@@ -78,15 +79,14 @@
             <h1>Already been here?</h1>
             <h3>Write an review!</h3>
             <form action="https://formspree.io/ch_v@ukr.net" method="POST">
-                Your name: 
-            <input type="text" name="name" placeholder="Your name" required><br><br>
-                Your Email:
-            <input type="email" name="email" placeholder="Email" required><br><br>
-                Your review:
-            <textarea name="review" rows="10" cols="100" required>Write Your review here</textarea><br><br>
+                <label>Your name: 
+                <input type="text" name="name" placeholder="Your name" required></label><br><br>
+                <label>Your Email:
+                <input type="email" name="email" placeholder="Email" required></label><br><br>
+                <label>Your review:
+            <textarea name="review" rows="10" cols="100" required>Write Your review here</textarea></label><br><br>
             <input type="submit">
             </form>
-            
         </section>
     </main>
     <footer>
