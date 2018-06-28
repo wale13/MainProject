@@ -229,4 +229,5 @@ div.footer {
     .header {max-width: 60%;}
     body {border-radius: 40px;}
     footer {border-radius: 0 0 40px 40px;}
+    div.header {float: none; margin: auto; max-width: 60%;}
 }
