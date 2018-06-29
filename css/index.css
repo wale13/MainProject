@@ -93,7 +93,7 @@ iframe {
 .transport-ico {
     display: none;
     float: left;
-    width: 25px;
+    max-height: 20px;
     margin-bottom: 5px;
     margin-right: 5px;
 }
@@ -174,7 +174,8 @@ div.footer {
     text-align: center;
     height: 60px;
 }
-.overlay {                            /* Burger's menu start*/
+/* Burger's menu start*/
+.overlay {
     height: 0%;
     width: 100%;
     position: fixed;
@@ -218,7 +219,8 @@ div.footer {
     font-size: 40px;
     top: 15px;
     right: 35px;}
-}                                        /* Burger's menu end*/
+}
+/* Burger's menu end*/
 @media screen and (max-width: 600px) {
     .burger-button {display: block;}
     div.float {display: none;}
