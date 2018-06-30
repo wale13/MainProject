@@ -19,10 +19,23 @@ div.header {
     max-width: 40%;
 }
 a.logo {
+    display: inline-block;
     text-decoration: none;
     font-family: 'Waiting for the Sunrise', cursive;
     color: #ff8800;
     font-size: 3.5vw;
+}
+div.float {
+    display: block;
+    float: right;
+    margin: 0;
+    margin-right: 37px;
+    position: sticky;
+    top: 0;
+    opacity: 0.6;
+}
+div.float:hover {
+    opacity: 1;
 }
 ul {
     list-style-type: none;
@@ -36,17 +49,54 @@ li a {
     display: block;
     padding: 0.2vw 1vw;
     text-decoration: none;
-    border-right: 2px solid #f1f1f1;
+    margin-right: 2px;
     background-color: #ff9900;
     color: white;
     font-size: 1em;
     border-radius: 0px 0px 15px 15px;
+    transition: background-color 0.3s,padding-top 0.3s;
 }
 li a:hover {
-    background-color: #30c;
+    background-color: #e17100;
+    padding-top: 12px;
+    transition: background-color 0.4s,padding-top 0.4s;
 }
-li:last-child a {
-     border-right: none;
+.main-img {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.history-img {
+    width: 25%;
+    transition: width 1s;
+}
+.history-img:hover {
+    width: 35%;
+    transition: width 1s;
+}
+.left-image {
+    float: left;
+    margin: 0 1.5rem 0.2rem 20px;
+}
+.right-image {
+    float: right;
+    margin: 0 20px 0.2rem 1.5rem;
+}
+.transport-img {
+    width: 30%;
+    transition: width 1s;
+}
+.transport-img:hover {
+    width: 40%;
+    transition: width 1s;
+}
+.transport-ico {
+    display: none;
+    float: left;
+    max-height: 20px;
+    margin-bottom: 5px;
+    margin-right: 5px;
 }
 h1, h3, h4 {
     text-align: center;
@@ -82,57 +132,16 @@ p  {
     margin-left: 2em;
     margin-right: 2em;
 }
-iframe {
-    width: 100%;
-    height: 450px;
-    border: 0;
-}
-.transport-img {
-    width: 30%;
-}
-.transport-ico {
-    display: none;
-    float: left;
-    max-height: 20px;
-    margin-bottom: 5px;
-    margin-right: 5px;
-}
-.main-img {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    overflow: auto;
-}
-.left-image {
-    float: left;
-    margin: 0 1.5rem 0.2rem 20px;
-}
-.right-image {
-    float: right;
-    margin: 0 20px 0.2rem 1.5rem;
-}
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
 }
-div.float {
+iframe {
     display: block;
-    float: right;
-    margin: 0;
-    margin-right: 37px;
-    position: sticky;
-    top: 0;
-    opacity: 0.6;
-}
-div.float:hover {
-    opacity: 1;
-}
-.burger-button {
-    display: none;
-    position: absolute;
-    top: 15px;
-    right: 38px;
+    width: 100%;
+    height: 450px;
+    border: 0;
 }
 form.review {
     margin: 0 20px;
@@ -141,14 +150,9 @@ label {
     display: block;
     font-family: 'EB Garamond', serif;
     font-size: 1.1em;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: left;
     margin-top: 0px;
     margin-bottom: 10px;
-}
-input[type*="e"], textarea {
-    color: #ff9900;
 }
 input[type="submit"] {
     display: block;
@@ -170,11 +174,20 @@ footer {
     margin-top: 15px;
 }
 div.footer {
-    padding-top: 20px;
-    text-align: center;
     height: 60px;
 }
-/* Burger's menu start*/
+p.footer {
+    padding-top: 20px;
+    text-align: center;
+    color: #f1f1f1;
+}
+            /* Burger's menu start*/
+.burger-button {
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 38px;
+}
 .overlay {
     height: 0%;
     width: 100%;
@@ -199,12 +212,12 @@ div.footer {
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
-    color: #000;
+    color: #fff;
     display: block;
     transition: 0.5s;
 }
 .overlay a:hover, .overlay a:focus {
-    color: #fff;
+    color: #000;
 }
 .overlay .closebtn {
     position: absolute;
@@ -213,23 +226,48 @@ div.footer {
     font-size: 60px;
 }
 @media screen and (max-height: 450px) {
-  .overlay {overflow-y: auto;}
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;}
+    .overlay {
+        overflow-y: auto;
+    }
+    .overlay a {
+        font-size: 20px
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
 }
-/* Burger's menu end*/
+            /* Burger's menu end*/
 @media screen and (max-width: 600px) {
-    .burger-button {display: block;}
-    div.float {display: none;}
-    .transport-img {display: none;}
-    .transport-ico {display: inline-block;}
-    p {margin-left: 0.5em; margin-right: 0.5em;}
-    a.logo {font-size: 5vw;}
-    .header {max-width: 60%;}
-    body {border-radius: 40px;}
-    footer {border-radius: 0 0 40px 40px;}
-    div.header {float: none; margin: auto; max-width: 60%;}
+    .burger-button {
+        display: block;
+    }
+    div.float {
+        display: none;
+    }
+    .transport-img, .history-img {
+        display: none;
+    }
+    .transport-ico {
+        display: inline-block;
+    }
+    p {
+        margin-left: 0.5em; margin-right: 0.5em;
+    }
+    a.logo {
+        font-size: 5vw;
+    }
+    .header {
+        max-width: 60%;
+    }
+    body {
+        border-radius: 40px;
+    }
+    footer {
+        border-radius: 0 0 40px 40px;
+    }
+    div.header {
+        float: none; margin: auto; max-width: 60%;
+    }
 }

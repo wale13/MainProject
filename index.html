@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Welcome to Lviv project</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <div class="header">
-        <span>
-            <a class="logo" href="index.html">Welcome to <img class="lviv-logo" src="img/logo.jpg" alt="logo"></a>
-        </span>
+        <a class="logo" href="index.html">Welcome to <img class="lviv-logo" src="img/logo.jpg" alt="logo"></a>
     </div>
     <div class="float">
         <ul>
@@ -36,22 +36,13 @@
         <div class="burger-button">
             <span style="font-size:50px;cursor:pointer" onclick="openNav()">&#8801;</span>
         </div>
-        <script>
-            function openNav() {
-                document.getElementById("myNav").style.height = "100%";
-            }
-
-            function closeNav() {
-                document.getElementById("myNav").style.height = "0%";
-            }
-        </script>
     <main>
         <div id="home">
-            <img class="main-img clearfix" src="img/lviv.jpeg" title="Lviv Opera House" alt="Lviv">
+            <img class="main-img" src="img/lviv.jpeg" title="Lviv Opera House" alt="Lviv">
         </div>
-        <section id="history" class="clearfix">
+        <section id="history">
             <h1>History</h1>
-            <img class="transport-img left-image" src="img/lviv_old.jpg" title="Old Lviv" alt="Lviv old">
+            <img class="history-img left-image" src="img/lviv_old.jpg" title="Old Lviv" alt="Lviv old">
             <p>The city was founded in 1256 by King Danylo. He named it in honor
             of his son, Lev.</p>
             <p>At different times it was part of Polish Kingdom, Austro-
@@ -63,7 +54,7 @@
             Eastern European, Italian and German, but also Gothic, renaissance,
             baroque, classic styles and Art Nouveau and Art Deco styles.</p>
         </section>
-        <section id="how-to-get" class="clearfix">
+        <section id="how-to-get">
             <h1>How to get here?</h1>
             <div class="clearfix"><h3>By rail</h3>
                 <img class="transport-img left-image" src="img/lviv_trainstation.jpg" title="Lviv Main Train Station" alt="Lviv Train Station">
@@ -88,8 +79,7 @@
             <div class="clearfix"><h3>By car</h3>
                 <img class="transport-img right-image" src="img/lviv_road.jpg" title="Road near Lviv" alt="Lviv Road">
                 <p><img class="transport-ico" src="img/car_icon.gif" alt="Car icon">If you travel to Lviv by your own car, it will be best for you to
-                follow E-40 International Highway (from the western border to Lviv it
-                is M-11 Ukrainian Highway, and from Kyiv it is M-06).</p>
+                follow E-40 International Highway (from the western border to Lviv it is M-11 Ukrainian Highway, and from Kyiv it is M-06).</p>
             </div>
         </section>
         <section id="citymap">
@@ -111,7 +101,10 @@
         </section>
     </main>
     <footer>
-        <div class="footer">Copyright 2018</div>
+        <div class="footer">
+            <p class="footer">© 2018 Vitaliy Cherlenevskyy</p>
+        </div>
     </footer>
+<script src="js/burger.js"></script>
 </body>
 </html>
