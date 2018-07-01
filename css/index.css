@@ -60,7 +60,6 @@ li a {
 li a:hover {
     background-color: #e17100;
     padding-top: 12px;
-    transition: background-color 0.4s,padding-top 0.4s;
 }
 .main-img {
     display: block;
@@ -74,7 +73,6 @@ li a:hover {
 }
 .history-img:hover {
     width: 35%;
-    transition: width 1s;
 }
 .left-image {
     float: left;
@@ -90,7 +88,6 @@ li a:hover {
 }
 .transport-img:hover {
     width: 40%;
-    transition: width 1s;
 }
 .transport-ico {
     display: none;
