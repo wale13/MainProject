@@ -1,0 +1,9 @@
+{ "reviews" : [
+    {  "reviewer" : "John Doe",
+    "review" : "Was there this summer. It was awesome!"},
+    { "reviewer" : "Sam Smith",
+    "review" : "Beautiful city with plenty of attractions."},
+    { "reviewer" : "Vyacheslav Koldovskyy",
+    "review" : "Great work! Nice site :)"}
+   ]
+}

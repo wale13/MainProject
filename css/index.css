@@ -141,6 +141,9 @@ p  {
     margin-left: 2em;
     margin-right: 2em;
 }
+.review, .reviewer {
+    font-family: 'Waiting for the Sunrise', cursive;
+}
 .clearfix::after {
     content: "";
     clear: both;
@@ -163,7 +166,7 @@ label {
     margin-top: 0px;
     margin-bottom: 10px;
 }
-input[type="submit"] {
+input[type="submit"], input[type="button"] {
     display: block;
     margin: auto;
     padding: 7px 20px;
