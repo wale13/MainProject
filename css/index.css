@@ -2,6 +2,9 @@
 :root {
     --theme-color: #ff9900;
 }
+:focus {
+    outline: 0;
+}
 html, body {
     max-width: 980px;
     margin: auto;
