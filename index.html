@@ -24,17 +24,17 @@
         </ul>
     </div>
     <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href=# class="closebtn">&times;</a>
                 <div class="overlay-content">
-                    <a href="#home" onclick="closeNav()">Home</a>
-                    <a href="#history" onclick="closeNav()">History</a>
-                    <a href="#how-to-get" onclick="closeNav()">How to get</a>
-                    <a href="#citymap" onclick="closeNav()">City map</a>
-                    <a href="#reviews" onclick="closeNav()">Reviews</a>
+                    <a href="#home">Home</a>
+                    <a href="#history">History</a>
+                    <a href="#how-to-get">How to get</a>
+                    <a href="#citymap">City map</a>
+                    <a href="#reviews">Reviews</a>
                 </div>
     </div>
-        <div class="burger-button">
-            <span style="font-size:50px;cursor:pointer" onclick="openNav()">&#8801;</span>
+        <div>
+            <span class="burger-button">&#8801;</span>
         </div>
     <main>
         <div id="home">
@@ -88,15 +88,14 @@
         </section>
         <section id="reviews">
             <h1>Reviews</h1>
-            <h4>Latest review:</h4>
-            <p>Name: <span class="reviewer"></span></p>
-            <p>Review: <span class="review"></span></p>
+            <h4>Latest reviews:</h4>
+            <p class="reviews">Name: <span class="reviewer"></span></p>
+            <p class="reviews">Review: <span class="review"></span></p>
+            <p class="reviews"><button class="prev-review"><<</button><button class="next-review">>></button></p>
             <h4>Add Your review!</h4>
             <form class="review" action="https://formspree.io/ch_v@ukr.net" method="POST">
                 <label>Your name:<br> 
                 <input type="text" name="name" placeholder="Your name" required></label>
-                <label>Your Email:<br>
-                <input type="email" name="email" placeholder="Email" required></label>
                 <label>Your review:<br>
                 <textarea name="review" rows="10" cols="80" placeholder="Write Your review here" required></textarea></label>
                 <input type="submit" value="Submit">
@@ -108,7 +107,8 @@
             <p class="footer">© 2018 Vitaliy Cherlenevskyy</p>
         </div>
     </footer>
-<script src="js/index.js"></script>
+<script src="js/burger-menu.js"></script>
 <script src="js/reviews.js"></script>
+<script src="js/smooth-scroll.js"></script>
 </body>
 </html>

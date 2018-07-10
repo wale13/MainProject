@@ -54,7 +54,7 @@ li a {
     margin-right: 2px;
     background-color: var(--theme-color);
     color: white;
-    font-size: 1em;
+    font-size: 1rem;
     border-radius: 0px 0px 15px 15px;
     transition: background-color 0.3s,padding-top 0.3s;
 }
@@ -108,13 +108,13 @@ li a:hover {
 }
 h1, h3, h4 {
     text-align: center;
-    margin-top: 0.3em;
-    margin-bottom: 0.3em;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
     }
 h1 {
     font-family: 'Wendy One', sans-serif;
     color: #f1f1f1;
-    font-size: 2.2em;
+    font-size: 2.2rem;
     text-shadow: 4px 3px black;
     background-color: var(--theme-color);
     border-radius: 20px;
@@ -136,13 +136,21 @@ h3 {
 p  {
     font-family: 'EB Garamond', serif;
     text-align: justify;
-    font-size: 1.3em;
-    text-indent: 2em;
-    margin-left: 2em;
-    margin-right: 2em;
+    font-size: 1.3rem;
+    text-indent: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+input[type="button"] {
+    display: inline-block;
+    text-align: center;
+}
+.reviews {
+    text-align: center;
 }
 .review, .reviewer {
     font-family: 'Waiting for the Sunrise', cursive;
+    text-shadow: 1px 1px 9px var(--theme-color);
 }
 .clearfix::after {
     content: "";
@@ -161,20 +169,29 @@ form.review {
 label {
     display: block;
     font-family: 'EB Garamond', serif;
-    font-size: 1.1em;
+    font-size: 1.1rem;
     text-align: left;
     margin-top: 0px;
     margin-bottom: 10px;
 }
-input[type="submit"], input[type="button"] {
+input[type="submit"] {
     display: block;
     margin: auto;
     padding: 7px 20px;
     border-radius: 8px;
     font-family: 'Wendy One', sans-serif;
-    font-size: 1.3em;
+    font-size: 1.3rem;
     color: #f1f1f1;
     background-color: var(--theme-color);
+}
+button {
+    font-size: 1rem;
+    display: inline-block;
+    border-radius: 25px;
+    color: #f1f1f1;
+    background-color: var(--theme-color);
+    padding: 3px 5px;
+    font-family: 'EB Garamond', serif;
 }
 textarea {
     max-width: 90%;
@@ -197,8 +214,10 @@ p.footer {
 .burger-button {
     display: none;
     position: absolute;
-    top: 15px;
+    top: 10px;
     right: 38px;
+    font-size: 2rem;
+    cursor: pointer;
 }
 .overlay {
     height: 0%;
