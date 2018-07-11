@@ -1,4 +1,4 @@
-{ "revs" : [
+[
     {  "reviewer" : "John Doe",
     "review" : "Was there this summer. It was awesome!"},
     { "reviewer" : "Sam Smith",
@@ -6,6 +6,5 @@
     { "reviewer" : "Vyacheslav Koldovskyy",
     "review" : "Great work! Nice site :)"},
     { "reviewer" : "Maria Mysak",
-    "review" : "Nice :)"},
+    "review" : "Nice :)"}
    ]
-}

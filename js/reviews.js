@@ -4,9 +4,9 @@ function getReviews(n) {
     fetch('json/reviews.json')
         .then( response => response.json() )
         .then( showData => {
-            document.querySelector('.reviewer').innerText = showData.revs[n].reviewer;
-            document.querySelector('.review').innerText = showData.revs[n].review;
-            len = showData.revs.length;
+            document.querySelector('.reviewer').innerText = showData[n].reviewer;
+            document.querySelector('.review').innerText = showData[n].review;
+            len = showData.length;
         });
 }
 document.querySelector('.next-review').addEventListener('click', next);
