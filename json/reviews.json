@@ -4,6 +4,8 @@
     { "reviewer" : "Sam Smith",
     "review" : "Beautiful city with plenty of attractions."},
     { "reviewer" : "Vyacheslav Koldovskyy",
-    "review" : "Great work! Nice site :)"}
+    "review" : "Great work! Nice site :)"},
+    { "reviewer" : "Maria Mysak",
+    "review" : "Nice :)"},
    ]
 }
