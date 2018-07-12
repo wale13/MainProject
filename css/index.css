@@ -8,7 +8,7 @@
 html, body {
     max-width: 980px;
     margin: auto;
-    box-sizing: content-box;
+    box-sizing: border-box;
     background-color: #444;
 }
 body {
@@ -34,7 +34,7 @@ div.float {
     display: block;
     float: right;
     margin: 0;
-    margin-right: 37px;
+    margin-right: 10px;
     position: sticky;
     top: 0;
     opacity: 0.6;
@@ -74,6 +74,25 @@ li a:hover {
 #how-to-get div {
     display: block;
     overflow: auto;
+}
+.gallery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    justify-content: center;
+}
+.gallery-column {
+    flex: 32%;
+    max-width: 31%;
+    padding: 0 4px;
+}
+.gallery-column img {
+    max-width: 100%;
+    margin-top: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .history-img {
     display: block;
@@ -167,16 +186,47 @@ iframe {
     height: 450px;
     border: 0;
 }
-form.review {
-    margin: 0 20px;
+fieldset {
+    border: 2px solid var(--theme-color);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px;
 }
-label {
+.labels {
+    width: 20%;
+    float: left;
+}
+fieldset label {
     display: block;
-    font-family: 'EB Garamond', serif;
-    font-size: 1.1rem;
-    text-align: left;
-    margin-top: 0px;
+    margin-bottom: 20px;
+    font-family: 'Wendy One', sans-serif;
+    color: #fff;
+    text-shadow: 1px 1px 9px var(--theme-color);
+    font-size: 2vw;
+    padding: 3px 10px;
+}
+.inputs {
+    width: 80%;
+    float: left;
     margin-bottom: 10px;
+}
+fieldset textarea {
+    display: block;
+    width: 95%;
+    border: 2px solid var(--theme-color);
+    border-radius: 5px;
+    padding: 6px 10px;
+    resize: vertical;
+}
+fieldset input[type="text"] {
+    display: block;
+    margin-bottom: 10px;
+    border: 2px solid var(--theme-color);
+    border-radius: 5px;
+    padding: 6px 10px;
+}
+legend {
+    text-align: center;
 }
 input[type="submit"] {
     display: block;
@@ -196,9 +246,6 @@ button {
     background-color: var(--theme-color);
     padding: 3px 5px;
     font-family: 'EB Garamond', serif;
-}
-textarea {
-    max-width: 90%;
 }
 footer {
     background-color: var(--theme-color);
@@ -259,6 +306,12 @@ p.footer {
     top: 0;
     right: 25px;
     font-size: 60px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.5s;
+}
+.overlay .closebtn:hover {
+    color: #000;
 }
 @media screen and (max-height: 450px) {
     .overlay {
@@ -304,5 +357,16 @@ p.footer {
     }
     div.header {
         float: none; margin: auto; max-width: 60%;
+    }
+    .labels {
+        display: none;
+    }
+    .inputs {
+        width: 100%;
+        float: none;
+    }
+    .gallery-column {
+        flex: 99%;
+        max-width: 75%;
     }
 }
