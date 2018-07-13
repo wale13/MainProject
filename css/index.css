@@ -211,7 +211,7 @@ fieldset label {
     font-family: 'Wendy One', sans-serif;
     color: #fff;
     text-shadow: 1px 1px 9px var(--theme-color);
-    font-size: 2vw;
+    font-size: 1.2rem;
     padding: 3px 10px;
 }
 .inputs {
