@@ -1,8 +1,8 @@
 {
     let reviewNumber = 0;
     let len;
-    let reviewer = document.querySelector('.reviewer');
-    let review = document.querySelector('.review');
+    const reviewer = document.querySelector('.reviewer');
+    const review = document.querySelector('.review');
     getReviews(reviewNumber);
 
     function getReviews(reviewNumber) {
