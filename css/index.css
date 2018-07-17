@@ -101,7 +101,7 @@ li a:hover {
     transition: width 1s;
 }
 .history-img:hover {
-    width: 30%;
+    width: 29%;
     box-shadow: 0 0 8px 2px rgba(255, 153, 0, 0.9), 0 0 20px 2px rgba(255, 153, 0, 0.7);
 }
 .left-image {
@@ -253,7 +253,7 @@ button {
     border-radius: 25px;
     color: #f1f1f1;
     background-color: var(--theme-color);
-    padding: 3px 5px;
+    padding: 8px 10px 10px 10px;
     font-family: 'EB Garamond', serif;
 }
 footer {
@@ -270,7 +270,6 @@ p.footer {
     text-align: center;
     color: #f1f1f1;
 }
-/* Burger menu start*/
 .burger-button {
     display: none;
     position: absolute;
@@ -280,7 +279,7 @@ p.footer {
     cursor: pointer;
 }
 .overlay {
-    height: 0%;
+    height: 0;
     width: 100%;
     position: fixed;
     z-index: 1;
@@ -291,6 +290,9 @@ p.footer {
     overflow-y: hidden;
     overflow-x: hidden;
     transition: 1s;
+}
+.shown {
+    height: 100%;
 }
 .overlay-content {
     position: relative;
@@ -335,7 +337,6 @@ p.footer {
         right: 35px;
     }
 }
-/* Burger menu end*/
 @media screen and (max-width: 600px) {
     .burger-button {
         display: block;
